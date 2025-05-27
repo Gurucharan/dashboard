@@ -22,7 +22,7 @@ import product5 from './product5.jpg';
 import product6 from './product6.jpg';
 import product7 from './product7.jpg';
 import product8 from './product8.jpg';
-
+ 
 export const gridOrderImage = (props) => (
   <div>
     <img
@@ -2843,6 +2843,1009 @@ export const ordersData = [
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
   },
 ];
+
+export const eventsData =[
+  {
+    "eventId": "EVT0001",
+    "eventName": "Wedding",
+    "eventDate": "2025-03-14",
+    "customerName": "Bob",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img6",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$3148"
+  },
+  {
+    "eventId": "EVT0002",
+    "eventName": "Meetup",
+    "eventDate": "2025-01-26",
+    "customerName": "Alice",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img3",
+    "eventLocation": "Phoenix",
+    "eventCost": "$1841"
+  },
+  {
+    "eventId": "EVT0003",
+    "eventName": "Concert",
+    "eventDate": "2025-12-18",
+    "customerName": "Eva",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img7",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$1512"
+  },
+  {
+    "eventId": "EVT0004",
+    "eventName": "Birthday",
+    "eventDate": "2025-10-29",
+    "customerName": "Bob",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img7",
+    "eventLocation": "New York",
+    "eventCost": "$2923"
+  },
+  {
+    "eventId": "EVT0005",
+    "eventName": "Seminar",
+    "eventDate": "2025-06-11",
+    "customerName": "Frank",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img8",
+    "eventLocation": "Phoenix",
+    "eventCost": "$1221"
+  },
+  {
+    "eventId": "EVT0006",
+    "eventName": "Birthday",
+    "eventDate": "2025-11-23",
+    "customerName": "Eva",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img2",
+    "eventLocation": "Chicago",
+    "eventCost": "$2723"
+  },
+  {
+    "eventId": "EVT0007",
+    "eventName": "Birthday",
+    "eventDate": "2025-04-22",
+    "customerName": "Bob",
+    "eventStatus": "Postponed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img6",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$2164"
+  },
+  {
+    "eventId": "EVT0008",
+    "eventName": "Conference",
+    "eventDate": "2025-06-22",
+    "customerName": "Frank",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img4",
+    "eventLocation": "New York",
+    "eventCost": "$4561"
+  },
+  {
+    "eventId": "EVT0009",
+    "eventName": "Concert",
+    "eventDate": "2025-01-29",
+    "customerName": "Charlie",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img6",
+    "eventLocation": "Chicago",
+    "eventCost": "$4138"
+  },
+  {
+    "eventId": "EVT0010",
+    "eventName": "Wedding",
+    "eventDate": "2025-12-21",
+    "customerName": "Bob",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img1",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$2549"
+  },
+  {
+    "eventId": "EVT0011",
+    "eventName": "Meetup",
+    "eventDate": "2025-02-06",
+    "customerName": "Bob",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img4",
+    "eventLocation": "Phoenix",
+    "eventCost": "$3641"
+  },
+  {
+    "eventId": "EVT0012",
+    "eventName": "Concert",
+    "eventDate": "2025-08-10",
+    "customerName": "Bob",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img5",
+    "eventLocation": "New York",
+    "eventCost": "$4325"
+  },
+  {
+    "eventId": "EVT0013",
+    "eventName": "Birthday",
+    "eventDate": "2025-07-04",
+    "customerName": "Bob",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img4",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$1825"
+  },
+  {
+    "eventId": "EVT0014",
+    "eventName": "Conference",
+    "eventDate": "2025-08-15",
+    "customerName": "Eva",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img1",
+    "eventLocation": "Houston",
+    "eventCost": "$584"
+  },
+  {
+    "eventId": "EVT0015",
+    "eventName": "Seminar",
+    "eventDate": "2025-09-07",
+    "customerName": "David",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img8",
+    "eventLocation": "Phoenix",
+    "eventCost": "$4855"
+  },
+  {
+    "eventId": "EVT0016",
+    "eventName": "Wedding",
+    "eventDate": "2025-07-06",
+    "customerName": "David",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img2",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$4423"
+  },
+  {
+    "eventId": "EVT0017",
+    "eventName": "Wedding",
+    "eventDate": "2025-04-20",
+    "customerName": "Frank",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img5",
+    "eventLocation": "Chicago",
+    "eventCost": "$4971"
+  },
+  {
+    "eventId": "EVT0018",
+    "eventName": "Birthday",
+    "eventDate": "2025-09-20",
+    "customerName": "Alice",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img2",
+    "eventLocation": "New York",
+    "eventCost": "$1746"
+  },
+  {
+    "eventId": "EVT0019",
+    "eventName": "Concert",
+    "eventDate": "2025-11-25",
+    "customerName": "David",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img4",
+    "eventLocation": "Houston",
+    "eventCost": "$4426"
+  },
+  {
+    "eventId": "EVT0020",
+    "eventName": "Conference",
+    "eventDate": "2025-01-11",
+    "customerName": "David",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img8",
+    "eventLocation": "Chicago",
+    "eventCost": "$2979"
+  },
+  {
+    "eventId": "EVT0021",
+    "eventName": "Meetup",
+    "eventDate": "2025-07-10",
+    "customerName": "Alice",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img1",
+    "eventLocation": "Phoenix",
+    "eventCost": "$2350"
+  },
+  {
+    "eventId": "EVT0022",
+    "eventName": "Concert",
+    "eventDate": "2025-08-23",
+    "customerName": "Bob",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img2",
+    "eventLocation": "Phoenix",
+    "eventCost": "$4431"
+  },
+  {
+    "eventId": "EVT0023",
+    "eventName": "Wedding",
+    "eventDate": "2025-09-04",
+    "customerName": "David",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img10",
+    "eventLocation": "Phoenix",
+    "eventCost": "$2436"
+  },
+  {
+    "eventId": "EVT0024",
+    "eventName": "Seminar",
+    "eventDate": "2025-04-20",
+    "customerName": "Charlie",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img1",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$4218"
+  },
+  {
+    "eventId": "EVT0025",
+    "eventName": "Concert",
+    "eventDate": "2025-12-12",
+    "customerName": "Charlie",
+    "eventStatus": "Postponed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img4",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$3578"
+  },
+  {
+    "eventId": "EVT0026",
+    "eventName": "Conference",
+    "eventDate": "2025-11-11",
+    "customerName": "Eva",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img5",
+    "eventLocation": "Chicago",
+    "eventCost": "$1571"
+  },
+  {
+    "eventId": "EVT0027",
+    "eventName": "Wedding",
+    "eventDate": "2025-03-14",
+    "customerName": "Eva",
+    "eventStatus": "Postponed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img2",
+    "eventLocation": "Phoenix",
+    "eventCost": "$2244"
+  },
+  {
+    "eventId": "EVT0028",
+    "eventName": "Wedding",
+    "eventDate": "2025-04-10",
+    "customerName": "David",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img2",
+    "eventLocation": "Houston",
+    "eventCost": "$2817"
+  },
+  {
+    "eventId": "EVT0029",
+    "eventName": "Concert",
+    "eventDate": "2025-12-20",
+    "customerName": "Frank",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img5",
+    "eventLocation": "Chicago",
+    "eventCost": "$1241"
+  },
+  {
+    "eventId": "EVT0030",
+    "eventName": "Concert",
+    "eventDate": "2025-01-23",
+    "customerName": "Alice",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img9",
+    "eventLocation": "Chicago",
+    "eventCost": "$3699"
+  },
+  {
+    "eventId": "EVT0031",
+    "eventName": "Meetup",
+    "eventDate": "2025-06-26",
+    "customerName": "Bob",
+    "eventStatus": "Postponed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img7",
+    "eventLocation": "Chicago",
+    "eventCost": "$2311"
+  },
+  {
+    "eventId": "EVT0032",
+    "eventName": "Meetup",
+    "eventDate": "2025-05-11",
+    "customerName": "Frank",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img10",
+    "eventLocation": "New York",
+    "eventCost": "$2041"
+  },
+  {
+    "eventId": "EVT0033",
+    "eventName": "Meetup",
+    "eventDate": "2025-10-25",
+    "customerName": "Eva",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img9",
+    "eventLocation": "Houston",
+    "eventCost": "$4542"
+  },
+  {
+    "eventId": "EVT0034",
+    "eventName": "Wedding",
+    "eventDate": "2025-01-10",
+    "customerName": "Charlie",
+    "eventStatus": "Postponed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img6",
+    "eventLocation": "Houston",
+    "eventCost": "$598"
+  },
+  {
+    "eventId": "EVT0035",
+    "eventName": "Seminar",
+    "eventDate": "2025-02-16",
+    "customerName": "Frank",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img3",
+    "eventLocation": "New York",
+    "eventCost": "$1157"
+  },
+  {
+    "eventId": "EVT0036",
+    "eventName": "Birthday",
+    "eventDate": "2025-11-15",
+    "customerName": "Bob",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img8",
+    "eventLocation": "New York",
+    "eventCost": "$4277"
+  },
+  {
+    "eventId": "EVT0037",
+    "eventName": "Meetup",
+    "eventDate": "2025-06-25",
+    "customerName": "Alice",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img7",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$3642"
+  },
+  {
+    "eventId": "EVT0038",
+    "eventName": "Wedding",
+    "eventDate": "2025-11-12",
+    "customerName": "Alice",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img1",
+    "eventLocation": "New York",
+    "eventCost": "$1073"
+  },
+  {
+    "eventId": "EVT0039",
+    "eventName": "Concert",
+    "eventDate": "2025-02-05",
+    "customerName": "Frank",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img7",
+    "eventLocation": "Phoenix",
+    "eventCost": "$678"
+  },
+  {
+    "eventId": "EVT0040",
+    "eventName": "Meetup",
+    "eventDate": "2025-06-21",
+    "customerName": "Alice",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img10",
+    "eventLocation": "Chicago",
+    "eventCost": "$3361"
+  },
+  {
+    "eventId": "EVT0041",
+    "eventName": "Conference",
+    "eventDate": "2025-02-23",
+    "customerName": "David",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img6",
+    "eventLocation": "Phoenix",
+    "eventCost": "$2971"
+  },
+  {
+    "eventId": "EVT0042",
+    "eventName": "Seminar",
+    "eventDate": "2025-02-17",
+    "customerName": "Charlie",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img4",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$4701"
+  },
+  {
+    "eventId": "EVT0043",
+    "eventName": "Concert",
+    "eventDate": "2025-11-17",
+    "customerName": "Bob",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img4",
+    "eventLocation": "Chicago",
+    "eventCost": "$1270"
+  },
+  {
+    "eventId": "EVT0044",
+    "eventName": "Seminar",
+    "eventDate": "2025-05-18",
+    "customerName": "Frank",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img6",
+    "eventLocation": "Phoenix",
+    "eventCost": "$4515"
+  },
+  {
+    "eventId": "EVT0045",
+    "eventName": "Birthday",
+    "eventDate": "2025-04-18",
+    "customerName": "Frank",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img5",
+    "eventLocation": "Phoenix",
+    "eventCost": "$4164"
+  },
+  {
+    "eventId": "EVT0046",
+    "eventName": "Conference",
+    "eventDate": "2025-12-19",
+    "customerName": "David",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img4",
+    "eventLocation": "Houston",
+    "eventCost": "$3738"
+  },
+  {
+    "eventId": "EVT0047",
+    "eventName": "Conference",
+    "eventDate": "2025-06-02",
+    "customerName": "Frank",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img1",
+    "eventLocation": "Houston",
+    "eventCost": "$4038"
+  },
+  {
+    "eventId": "EVT0048",
+    "eventName": "Birthday",
+    "eventDate": "2025-08-03",
+    "customerName": "Charlie",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img9",
+    "eventLocation": "Houston",
+    "eventCost": "$2883"
+  },
+  {
+    "eventId": "EVT0049",
+    "eventName": "Concert",
+    "eventDate": "2025-04-30",
+    "customerName": "David",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img4",
+    "eventLocation": "Houston",
+    "eventCost": "$3849"
+  },
+  {
+    "eventId": "EVT0050",
+    "eventName": "Birthday",
+    "eventDate": "2025-12-02",
+    "customerName": "Charlie",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img5",
+    "eventLocation": "Phoenix",
+    "eventCost": "$3930"
+  },
+  {
+    "eventId": "EVT0051",
+    "eventName": "Seminar",
+    "eventDate": "2025-04-16",
+    "customerName": "Bob",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img5",
+    "eventLocation": "Chicago",
+    "eventCost": "$4771"
+  },
+  {
+    "eventId": "EVT0052",
+    "eventName": "Birthday",
+    "eventDate": "2025-02-12",
+    "customerName": "Bob",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img7",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$3887"
+  },
+  {
+    "eventId": "EVT0053",
+    "eventName": "Seminar",
+    "eventDate": "2025-12-17",
+    "customerName": "Frank",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img4",
+    "eventLocation": "Houston",
+    "eventCost": "$4424"
+  },
+  {
+    "eventId": "EVT0054",
+    "eventName": "Wedding",
+    "eventDate": "2025-02-09",
+    "customerName": "Eva",
+    "eventStatus": "Postponed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img7",
+    "eventLocation": "Chicago",
+    "eventCost": "$2052"
+  },
+  {
+    "eventId": "EVT0055",
+    "eventName": "Concert",
+    "eventDate": "2025-08-09",
+    "customerName": "Alice",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img6",
+    "eventLocation": "Phoenix",
+    "eventCost": "$1455"
+  },
+  {
+    "eventId": "EVT0056",
+    "eventName": "Wedding",
+    "eventDate": "2025-02-03",
+    "customerName": "Bob",
+    "eventStatus": "Postponed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img3",
+    "eventLocation": "Phoenix",
+    "eventCost": "$2125"
+  },
+  {
+    "eventId": "EVT0057",
+    "eventName": "Concert",
+    "eventDate": "2025-02-16",
+    "customerName": "Frank",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img5",
+    "eventLocation": "Chicago",
+    "eventCost": "$3550"
+  },
+  {
+    "eventId": "EVT0058",
+    "eventName": "Seminar",
+    "eventDate": "2025-01-09",
+    "customerName": "Charlie",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img6",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$2189"
+  },
+  {
+    "eventId": "EVT0059",
+    "eventName": "Seminar",
+    "eventDate": "2025-02-14",
+    "customerName": "Alice",
+    "eventStatus": "Postponed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img7",
+    "eventLocation": "Houston",
+    "eventCost": "$2646"
+  },
+  {
+    "eventId": "EVT0060",
+    "eventName": "Concert",
+    "eventDate": "2025-08-22",
+    "customerName": "Frank",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img3",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$3170"
+  },
+  {
+    "eventId": "EVT0061",
+    "eventName": "Meetup",
+    "eventDate": "2025-10-19",
+    "customerName": "Frank",
+    "eventStatus": "Postponed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img8",
+    "eventLocation": "Houston",
+    "eventCost": "$548"
+  },
+  {
+    "eventId": "EVT0062",
+    "eventName": "Meetup",
+    "eventDate": "2025-10-10",
+    "customerName": "David",
+    "eventStatus": "Postponed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img2",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$3084"
+  },
+  {
+    "eventId": "EVT0063",
+    "eventName": "Meetup",
+    "eventDate": "2025-10-12",
+    "customerName": "Charlie",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img8",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$591"
+  },
+  {
+    "eventId": "EVT0064",
+    "eventName": "Meetup",
+    "eventDate": "2025-06-07",
+    "customerName": "Bob",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img6",
+    "eventLocation": "Phoenix",
+    "eventCost": "$3052"
+  },
+  {
+    "eventId": "EVT0065",
+    "eventName": "Conference",
+    "eventDate": "2025-01-03",
+    "customerName": "Frank",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img2",
+    "eventLocation": "Houston",
+    "eventCost": "$2058"
+  },
+  {
+    "eventId": "EVT0066",
+    "eventName": "Birthday",
+    "eventDate": "2025-09-12",
+    "customerName": "David",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img5",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$1459"
+  },
+  {
+    "eventId": "EVT0067",
+    "eventName": "Concert",
+    "eventDate": "2025-11-08",
+    "customerName": "Eva",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img10",
+    "eventLocation": "Chicago",
+    "eventCost": "$3848"
+  },
+  {
+    "eventId": "EVT0068",
+    "eventName": "Wedding",
+    "eventDate": "2025-08-22",
+    "customerName": "Alice",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img10",
+    "eventLocation": "Phoenix",
+    "eventCost": "$2282"
+  },
+  {
+    "eventId": "EVT0069",
+    "eventName": "Birthday",
+    "eventDate": "2025-07-19",
+    "customerName": "Charlie",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img2",
+    "eventLocation": "Phoenix",
+    "eventCost": "$3286"
+  },
+  {
+    "eventId": "EVT0070",
+    "eventName": "Wedding",
+    "eventDate": "2025-01-27",
+    "customerName": "Bob",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img10",
+    "eventLocation": "New York",
+    "eventCost": "$2242"
+  },
+  {
+    "eventId": "EVT0071",
+    "eventName": "Seminar",
+    "eventDate": "2025-09-17",
+    "customerName": "Frank",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img8",
+    "eventLocation": "Houston",
+    "eventCost": "$3495"
+  },
+  {
+    "eventId": "EVT0072",
+    "eventName": "Birthday",
+    "eventDate": "2025-03-04",
+    "customerName": "Eva",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img9",
+    "eventLocation": "Phoenix",
+    "eventCost": "$3003"
+  },
+  {
+    "eventId": "EVT0073",
+    "eventName": "Meetup",
+    "eventDate": "2025-12-15",
+    "customerName": "Frank",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img2",
+    "eventLocation": "Phoenix",
+    "eventCost": "$4594"
+  },
+  {
+    "eventId": "EVT0074",
+    "eventName": "Meetup",
+    "eventDate": "2025-02-18",
+    "customerName": "Bob",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img7",
+    "eventLocation": "Phoenix",
+    "eventCost": "$726"
+  },
+  {
+    "eventId": "EVT0075",
+    "eventName": "Meetup",
+    "eventDate": "2025-12-12",
+    "customerName": "David",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img7",
+    "eventLocation": "Houston",
+    "eventCost": "$1861"
+  },
+  {
+    "eventId": "EVT0076",
+    "eventName": "Conference",
+    "eventDate": "2025-02-12",
+    "customerName": "Bob",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img9",
+    "eventLocation": "Phoenix",
+    "eventCost": "$909"
+  },
+  {
+    "eventId": "EVT0077",
+    "eventName": "Seminar",
+    "eventDate": "2025-02-01",
+    "customerName": "Frank",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img9",
+    "eventLocation": "New York",
+    "eventCost": "$2719"
+  },
+  {
+    "eventId": "EVT0078",
+    "eventName": "Birthday",
+    "eventDate": "2025-01-28",
+    "customerName": "Charlie",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img2",
+    "eventLocation": "Houston",
+    "eventCost": "$2933"
+  },
+  {
+    "eventId": "EVT0079",
+    "eventName": "Wedding",
+    "eventDate": "2025-11-13",
+    "customerName": "Eva",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img8",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$3173"
+  },
+  {
+    "eventId": "EVT0080",
+    "eventName": "Wedding",
+    "eventDate": "2025-07-15",
+    "customerName": "Eva",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img1",
+    "eventLocation": "New York",
+    "eventCost": "$4828"
+  },
+  {
+    "eventId": "EVT0081",
+    "eventName": "Seminar",
+    "eventDate": "2025-03-05",
+    "customerName": "Charlie",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img4",
+    "eventLocation": "Houston",
+    "eventCost": "$4082"
+  },
+  {
+    "eventId": "EVT0082",
+    "eventName": "Seminar",
+    "eventDate": "2025-08-14",
+    "customerName": "David",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img4",
+    "eventLocation": "Chicago",
+    "eventCost": "$1124"
+  },
+  {
+    "eventId": "EVT0083",
+    "eventName": "Meetup",
+    "eventDate": "2025-04-21",
+    "customerName": "Bob",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img7",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$4515"
+  },
+  {
+    "eventId": "EVT0084",
+    "eventName": "Seminar",
+    "eventDate": "2025-01-22",
+    "customerName": "David",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img1",
+    "eventLocation": "Houston",
+    "eventCost": "$1368"
+  },
+  {
+    "eventId": "EVT0085",
+    "eventName": "Seminar",
+    "eventDate": "2025-06-28",
+    "customerName": "Charlie",
+    "eventStatus": "Postponed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img6",
+    "eventLocation": "Chicago",
+    "eventCost": "$1577"
+  },
+  {
+    "eventId": "EVT0086",
+    "eventName": "Birthday",
+    "eventDate": "2025-02-08",
+    "customerName": "Bob",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img9",
+    "eventLocation": "New York",
+    "eventCost": "$2879"
+  },
+  {
+    "eventId": "EVT0087",
+    "eventName": "Meetup",
+    "eventDate": "2025-01-12",
+    "customerName": "Eva",
+    "eventStatus": "Postponed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img9",
+    "eventLocation": "Phoenix",
+    "eventCost": "$4304"
+  },
+  {
+    "eventId": "EVT0088",
+    "eventName": "Meetup",
+    "eventDate": "2025-09-07",
+    "customerName": "Frank",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img8",
+    "eventLocation": "New York",
+    "eventCost": "$3082"
+  },
+  {
+    "eventId": "EVT0089",
+    "eventName": "Conference",
+    "eventDate": "2025-04-02",
+    "customerName": "Bob",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img5",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$3266"
+  },
+  {
+    "eventId": "EVT0090",
+    "eventName": "Meetup",
+    "eventDate": "2025-10-14",
+    "customerName": "Frank",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img4",
+    "eventLocation": "New York",
+    "eventCost": "$4194"
+  },
+  {
+    "eventId": "EVT0091",
+    "eventName": "Meetup",
+    "eventDate": "2025-03-17",
+    "customerName": "Frank",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img4",
+    "eventLocation": "Phoenix",
+    "eventCost": "$2735"
+  },
+  {
+    "eventId": "EVT0092",
+    "eventName": "Concert",
+    "eventDate": "2025-02-23",
+    "customerName": "David",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img2",
+    "eventLocation": "Houston",
+    "eventCost": "$1369"
+  },
+  {
+    "eventId": "EVT0093",
+    "eventName": "Meetup",
+    "eventDate": "2025-06-02",
+    "customerName": "David",
+    "eventStatus": "Postponed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img2",
+    "eventLocation": "Phoenix",
+    "eventCost": "$1951"
+  },
+  {
+    "eventId": "EVT0094",
+    "eventName": "Birthday",
+    "eventDate": "2025-03-17",
+    "customerName": "Frank",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img5",
+    "eventLocation": "Houston",
+    "eventCost": "$3611"
+  },
+  {
+    "eventId": "EVT0095",
+    "eventName": "Concert",
+    "eventDate": "2025-07-23",
+    "customerName": "David",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img1",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$4180"
+  },
+  {
+    "eventId": "EVT0096",
+    "eventName": "Seminar",
+    "eventDate": "2025-07-26",
+    "customerName": "Eva",
+    "eventStatus": "Scheduled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img7",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$4180"
+  },
+  {
+    "eventId": "EVT0097",
+    "eventName": "Wedding",
+    "eventDate": "2025-06-02",
+    "customerName": "Alice",
+    "eventStatus": "Completed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img9",
+    "eventLocation": "Phoenix",
+    "eventCost": "$2027"
+  },
+  {
+    "eventId": "EVT0098",
+    "eventName": "Birthday",
+    "eventDate": "2025-01-11",
+    "customerName": "David",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img9",
+    "eventLocation": "Houston",
+    "eventCost": "$1806"
+  },
+  {
+    "eventId": "EVT0099",
+    "eventName": "Meetup",
+    "eventDate": "2025-12-10",
+    "customerName": "Bob",
+    "eventStatus": "Cancelled",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img3",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$4526"
+  },
+  {
+    "eventId": "EVT0100",
+    "eventName": "Conference",
+    "eventDate": "2025-10-25",
+    "customerName": "David",
+    "eventStatus": "Postponed",
+    "eventImage": "https://dummyimage.com/100x100/000/fff&text=Img2",
+    "eventLocation": "Los Angeles",
+    "eventCost": "$4578"
+  }
+]
 
 export const scheduleData = [
   {
