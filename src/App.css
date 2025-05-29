@@ -88,3 +88,7 @@
     width: 100% !important; /* Ensure content fills the dialog */
     box-sizing: border-box;
 }
+
+.e-pager .e-pagerconstant{
+  margin: 0 0 6px 12px !important;
+}
