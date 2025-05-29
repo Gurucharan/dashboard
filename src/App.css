@@ -45,3 +45,46 @@
 .e-input-group:not(.e-float-icon-left), .e-input-group.e-success:not(.e-float-icon-left), .e-input-group.e-warning:not(.e-float-icon-left), .e-input-group.e-error:not(.e-float-icon-left), .e-input-group.e-control-wrapper:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left){
   border: none;
 }
+
+/* Base styles for the dialog - defaults to a percentage of the viewport */
+.e-dialog {
+    width: 90vw !important; /* Start with 90% of viewport width */
+    max-width: 600px !important; /* But don't let it get wider than 600px */
+    /* You might also want to set a min-width for very small screens if needed,
+       though 90vw usually handles this okay.
+       min-width: 300px !important;
+    */
+
+    /* Ensure content inside also scales */
+    /* This might already be handled by your flex/grid setup within the template,
+       but it's good to re-enforce */
+    box-sizing: border-box; /* Important for padding/border calculation */
+    /* You might want to adjust the dialog's height if it's too tall */
+    /* height: auto !important; */
+    /* max-height: 90vh !important; */ /* Prevent it from overflowing vertical viewport */
+    /* overflow-y: auto !important; */ /* Add scrollbar if content exceeds max-height */
+}
+
+/* Optional: Media query for very small screens (e.g., phones in portrait) */
+@media (max-width: 480px) {
+    .e-dialog {
+        width: 95vw !important; /* Take up more space on tiny screens */
+        /* You might want to remove max-width here if the content can shrink even more */
+        /* max-width: none !important; */
+    }
+}
+
+/* Optional: Media query for larger screens (e.g., tablets in landscape or small desktops) */
+@media (min-width: 768px) {
+    .e-dialog {
+        width: 70vw !important; /* A bit narrower on tablets */
+        max-width: 700px !important; /* Allow it to be a bit larger on larger screens */
+    }
+}
+
+/* Ensure the content area within the dialog also adapts */
+.e-dialog .e-dialog-content {
+    overflow: visible !important; /* Keep as visible for custom template */
+    width: 100% !important; /* Ensure content fills the dialog */
+    box-sizing: border-box;
+}
