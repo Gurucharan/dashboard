@@ -33,8 +33,8 @@ import '@syncfusion/ej2-react-grids/styles/material.css';
 // const API_BASE_URL = 'http://localhost:5001/api/events';
 // const IMAGE_UPLOAD_BASE_URL = 'http://localhost:5001';
 // Replace with your actual Render backend URL
-const API_BASE_URL = process.env.REACT_APP_API_URL + '/api/events';
-const IMAGE_UPLOAD_BASE_URL = process.env.REACT_APP_API_URL;
+const API_BASE_URL = 'https://elevate-hujm.onrender.com/api/events';
+const IMAGE_UPLOAD_BASE_URL = 'https://elevate-hujm.onrender.com';
 
 
 
