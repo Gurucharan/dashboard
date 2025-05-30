@@ -30,8 +30,13 @@ import '@syncfusion/ej2-dropdowns/styles/material.css';
 import '@syncfusion/ej2-navigations/styles/material.css';
 import '@syncfusion/ej2-react-grids/styles/material.css';
 
-const API_BASE_URL = 'http://localhost:5001/api/events';
-const IMAGE_UPLOAD_BASE_URL = 'http://localhost:5001';
+// const API_BASE_URL = 'http://localhost:5001/api/events';
+// const IMAGE_UPLOAD_BASE_URL = 'http://localhost:5001';
+// Replace with your actual Render backend URL
+const API_BASE_URL = process.env.REACT_APP_API_URL + '/api/events';
+const IMAGE_UPLOAD_BASE_URL = process.env.REACT_APP_API_URL;
+
+
 
 // Global variable to store current dialog data
 let currentDialogData = {};
