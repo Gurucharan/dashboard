@@ -696,7 +696,7 @@ const Events = () => {
   };
 
   return (
-    <div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl dark:bg-secondary-dark-bg">
+    <div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl">
       {/* Custom CSS for compact filter popup */}
       <style>{`
         /* Compact Filter Dialog Styles */
