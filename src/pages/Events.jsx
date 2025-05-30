@@ -859,6 +859,7 @@ const Events = () => {
             min-width: 60px !important;
             font-size: 11px !important;
           }
+ 
         }
       `}</style>
 
