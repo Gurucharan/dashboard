@@ -30,7 +30,7 @@ const Sidebar = () => {
             className="items-center gap-3 ml-3 mt-4 flex
           text-xl font-extrabold tracking-tight dark:text-white
           text-slate-900">
-            <SiShopware /><span className="mt-2">Elevate<span className="ml-1" style={{ fontSize: '0.6em', verticalAlign: 'sub', color: 'gray' }}> by GKS</span>
+            <SiShopware /><span className="mt-2">Elevate<span className="ml-1" style={{ fontSize: '0.6em', fontWeight: '500', verticalAlign: 'sub', color: 'gray' }}> by GKS</span>
             </span>
           </Link>
           <TooltipComponent content="Menu" position="BottomCenter">

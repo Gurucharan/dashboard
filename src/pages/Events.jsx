@@ -321,10 +321,10 @@ const Events = () => {
 
       await Promise.all(deletePromises);
       console.log('Delete operation successful');
-      
+
       // Refresh data after successful deletion
       await fetchEvents();
-      
+
       // Clear any selected rows
       if (gridRef.current) {
         gridRef.current.clearSelection();
@@ -345,14 +345,14 @@ const Events = () => {
           // Prepare data with full image URLs for Excel export
           const excelDataWithImages = events.map((event) => {
             let fullImageUrl = 'No Image Available';
-            
+
             if (event.eventImage) {
               // Ensure we always have the full URL for Excel export
               fullImageUrl = event.eventImage.startsWith('/uploads')
                 ? `${IMAGE_UPLOAD_BASE_URL}${event.eventImage}`
                 : event.eventImage;
             }
-            
+
             return {
               ...event,
               // Override the eventImage field with full URL for export
@@ -423,13 +423,13 @@ const Events = () => {
           // Prepare data with full image URLs for PDF export
           const pdfDataWithImages = events.map((event) => {
             let fullImageUrl = 'No Image Available';
-            
+
             if (event.eventImage) {
               fullImageUrl = event.eventImage.startsWith('/uploads')
                 ? `${IMAGE_UPLOAD_BASE_URL}${event.eventImage}`
                 : event.eventImage;
             }
-            
+
             return {
               ...event,
               // Override the eventImage field with full URL for export
@@ -510,33 +510,33 @@ const Events = () => {
   const actionBegin = (args) => {
     if (args.requestType === 'save') {
       console.log('ActionBegin - Current dialog data:', currentDialogData);
-      
+
       // Custom validation before save
       if (!currentDialogData.eventName || currentDialogData.eventName.trim() === '') {
         setError('Event Name is required.');
         args.cancel = true;
         return;
       }
-      
+
       if (!currentDialogData.eventLocation || currentDialogData.eventLocation.trim() === '') {
         setError('Location is required.');
         args.cancel = true;
         return;
       }
-      
+
       if (!currentDialogData.eventDate || !(currentDialogData.eventDate instanceof Date) || isNaN(currentDialogData.eventDate.getTime())) {
         setError('Event Date is required and must be a valid date.');
         args.cancel = true;
         return;
       }
-      
+
       // Clear any previous errors
       setError(null);
-      
+
       Object.assign(args.data, currentDialogData);
       console.log('ActionBegin - Updated args.data:', args.data);
     }
-    
+
     // Prevent default delete behavior and handle it manually
     if (args.requestType === 'delete') {
       args.cancel = true; // Cancel the default delete operation
@@ -605,7 +605,7 @@ const Events = () => {
       if (apiCall) {
         const response = await apiCall;
         console.log(`${args.action.toUpperCase()} operation successful:`, response.data);
-        
+
         // Refresh data after successful save
         await fetchEvents();
       }
@@ -623,7 +623,7 @@ const Events = () => {
     const imageUrl = props.eventImage && props.eventImage.startsWith('/uploads')
       ? `${IMAGE_UPLOAD_BASE_URL}${props.eventImage}`
       : (props.eventImage || 'https://placehold.co/150');
-    
+
     return (
       <div className="flex justify-center items-center w-full h-full">
         <img
@@ -765,14 +765,26 @@ const Events = () => {
           .e-grid .e-filter-popup .e-dlg-content {
             max-height: 300px !important;
           }
+
+            .e-grid .e-gridheader,
+            .e-grid .e-gridcontent {
+               overflow-x: auto !important;
+          }
+
         }
         /* Prevent grid shifting */
         .e-grid {
-          overflow-x: auto !important;
+          max-width: 100% !important;
+          overflow: hidden !important;
         }
         .e-grid .e-gridcontent {
           overflow-x: auto !important;
         }
+
+        .e-grid .e-content {
+          overflow-x: auto !important;
+        }
+
         /* Compact search box in toolbar */
         .e-grid .e-toolbar .e-search {
           max-width: 200px !important;
@@ -843,20 +855,20 @@ const Events = () => {
       `}</style>
 
       <Header category="Page" title="Events" />
-      
+
       {(loading || authLoading) && (
         <div className="text-center text-lg py-8">
           <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900 mr-3"></div>
           Loading events...
         </div>
       )}
-      
+
       {error && (
         <div className="text-center text-red-500 text-lg py-4 bg-red-50 rounded-lg mb-4">
           <strong>Error:</strong> {error}
         </div>
       )}
-      
+
       {!loading && !error && !authLoading && (
         <div className="mt-6">
           <div className="overflow-x-auto">
@@ -888,12 +900,15 @@ const Events = () => {
               enableResponsiveRow={true}
               allowTextWrap={true}
               textWrapSettings={{ wrapMode: 'Content' }}
+              allowResizing={true}
+              gridLines="Both"
             >
+
               <ColumnsDirective>
                 <ColumnDirective
                   field="eventImage"
-                  headerText="Event Image"
-                  width="130"
+                  headerText="Image"
+                  width="100"
                   allowSorting={false}
                   allowFiltering={false}
                   template={eventImageTemplate}
@@ -904,78 +919,69 @@ const Events = () => {
                   editType="stringedit"
                   allowEditing={true}
                   includeInExport={true}
-                  minWidth="100"
+                  minWidth="80"
                 />
                 <ColumnDirective
                   field="eventName"
                   headerText="Event Name"
-                  width="150"
+                  width="120"
                   textAlign="Left"
                   headerTextAlign="Center"
                   headerStyle={{ fontWeight: '600', fontSize: '14px', textAlign: 'center' }}
-                  minWidth="120"
+                  minWidth="100"
                   allowFiltering={true}
-                  filterBarTemplate={{
-                    create: () => {
-                      const input = document.createElement('input');
-                      input.className = 'e-input';
-                      input.style.height = '28px';
-                      input.style.fontSize = '12px';
-                      return input;
-                    }
-                  }}
                 />
                 <ColumnDirective
                   field="eventDate"
-                  headerText="Event Date"
-                  width="130"
+                  headerText="Date"
+                  width="110"
                   textAlign="Center"
                   headerTextAlign="Center"
                   headerStyle={{ fontWeight: '600', fontSize: '14px', textAlign: 'center' }}
                   type="date"
                   format="yMd"
                   editType="datepickeredit"
-                  minWidth="110"
+                  minWidth="90"
                   allowFiltering={true}
                 />
                 <ColumnDirective
                   field="eventTime"
                   headerText="Time"
-                  width="100"
+                  width="80"
                   textAlign="Center"
                   headerTextAlign="Center"
                   headerStyle={{ fontWeight: '600', fontSize: '14px', textAlign: 'center' }}
                   type="string"
                   editType="stringedit"
-                  minWidth="80"
+                  minWidth="70"
                   allowFiltering={true}
                 />
                 <ColumnDirective
                   field="description"
                   headerText="Description"
-                  width="180"
+                  width="150"
                   textAlign="Left"
                   headerTextAlign="Center"
                   headerStyle={{ fontWeight: '600', fontSize: '14px', textAlign: 'center' }}
                   editType="textareaedit"
-                  minWidth="150"
+                  minWidth="120"
                   allowFiltering={true}
                   clipMode="EllipsisWithTooltip"
                 />
                 <ColumnDirective
                   field="eventLocation"
                   headerText="Location"
-                  width="130"
+                  width="110"
                   textAlign="Center"
                   headerTextAlign="Center"
                   headerStyle={{ fontWeight: '600', fontSize: '14px', textAlign: 'center' }}
-                  minWidth="110"
+                  minWidth="90"
                   allowFiltering={true}
                 />
                 <ColumnDirective
                   field="eventStatus"
                   headerText="Status"
-                  width="130"
+                  width="120"
                   textAlign="Center"
                   headerTextAlign="Center"
                   headerStyle={{ fontWeight: '600', fontSize: '14px', textAlign: 'center' }}
@@ -983,21 +989,22 @@ const Events = () => {
                   exportTemplate={eventStatusExportTemplate}
                   editType="dropdownedit"
                   edit={{ params: { dataSource: ['Scheduled', 'Postponed', 'Cancelled', 'Completed'] } }}
-                  minWidth="110"
+                  minWidth="100"
                   allowFiltering={true}
                   filterType="CheckBox"
                 />
                 <ColumnDirective
                   field="eventCost"
-                  headerText="Event Cost"
-                  width="130"
+                  headerText="Cost"
+                  width="90"
                   textAlign="Center"
                   headerTextAlign="Center"
                   headerStyle={{ fontWeight: '600', fontSize: '14px', textAlign: 'center' }}
                   editType="stringedit"
-                  minWidth="110"
+                  minWidth="70"
                   allowFiltering={true}
                 />
+                {/* Keep the hidden ID column as is */}
                 <ColumnDirective
                   field="_id"
                   headerText="Event ID"
@@ -1011,13 +1018,14 @@ const Events = () => {
                   allowEditing={false}
                   allowFiltering={false}
                 />
+
               </ColumnsDirective>
               <Inject services={[Resize, Sort, ContextMenu, Filter, Page, ExcelExport, Edit, PdfExport, Toolbar]} />
             </GridComponent>
           </div>
         </div>
       )}
-      
+
       {/* Loading overlay for export operations
       {loading && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
