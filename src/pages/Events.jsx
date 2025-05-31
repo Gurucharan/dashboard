@@ -699,6 +699,20 @@ const Events = () => {
     <div className="m-2 md:m-10 p-2 md:p-10 bg-white rounded-3xl">
       {/* Custom CSS for compact filter popup */}
       <style>{`
+
+            /* Hover and alternating row background */
+        .e-grid .e-row {
+          transition: background-color 0.3s ease;
+        }
+
+        .e-grid .e-row:hover {
+          background-color: #f0f9ff !important; /* Light blue on hover */
+        }
+
+        .e-grid .e-row.e-altrow {
+          background-color: #fafafa !important; /* Light gray for alternate rows */
+        }
+
         /* Compact Filter Dialog Styles */
         .e-grid .e-filter-popup {
           max-width: 280px !important;
